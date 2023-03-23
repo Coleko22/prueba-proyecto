@@ -1,0 +1,758 @@
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+:root {
+    --color-negro: #000;
+    --color-blanco: #fff;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 2fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+/* Header */
+
+.grid-header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    background-color: #000;
+    grid-row: 1/2;
+   
+}
+
+.header-Titulo {
+    display: flex;
+    flex-direction: row;
+    color:#fff;
+    justify-content:space-around;
+}
+
+.header-Titulo img {
+    position: relative;
+    align-self: center;
+    width: 50px;
+    object-fit: cover;
+}
+
+.header-Titulo span{
+    align-self: center;
+
+}
+
+.header-nav {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.header-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    
+}
+
+
+.header-nav ul li {
+   padding: 10px;
+   
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    
+}
+
+.header-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-lista ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.header-lista ul li{
+    padding: 10px;
+}
+
+.header-lista ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.header-lista ul li:last-child{
+    border-left: 1px solid #fff;
+}
+
+.header-lista ul li:hover{
+   background-color: rgba(119, 119, 119, 0.747);
+}
+
+.header-nav ul li:hover{
+    background-color: rgba(119, 119, 119, 0.747);
+}
+
+
+/* Main */
+
+.grid-main {
+    background-color: rgba(255, 0, 0, 0.658);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr ;
+    grid-template-rows: 1.5fr 1fr auto 0.8fr auto 0.7fr 0.7fr 0.7fr auto 1fr 1fr auto auto 1fr;
+    grid-auto-rows: auto;
+    grid-row: 2 / 3;
+    
+}
+
+.main-banner {
+    border-radius: 20px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-image: url(city-g34c106bf9_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.main-titulo {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -130px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+
+}
+
+.main-titulo img{
+    height: 230px;
+    width: 230px;
+   
+}
+
+.main-titulo span {
+    font-size: 25px;
+    margin: 5px;
+    border-bottom: 3px solid #000;
+    padding: 5px;
+}
+
+.main-acerca-de{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+   
+}
+
+.main-acerca-de span {
+    border-bottom: 3px solid #000;
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.contenedor-experiencia-titulo {
+    display: flex;
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    flex-direction: row;
+    color: #fff;
+    font-size: 20px;
+    justify-content: center;
+    padding: 20px;
+  
+}
+
+.main-experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    border-bottom: 5px solid #000;
+}
+
+.main-experiencia h2{
+    color: #fff;
+    font-size: 30px;
+    border-bottom: 3px solid #000;
+    padding: 5px;
+}
+
+.experiencia-descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    border-bottom: 5px solid #000;
+    
+}
+
+.experiencia-descripcion span{
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.experiencia-descripcion p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.img-digital {
+    width: 200px;
+    margin-top: 5px;
+}
+
+.img-digital img{
+   border-radius: 15px;
+}
+
+.contenedor-educacion-titulo {
+    display: flex;
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+    flex-direction: row;
+    color: #fff;
+    font-size: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-educacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+}
+
+.main-educacion h2{
+    color: #fff;
+    font-size: 30px;
+    border-bottom: 3px solid #000;
+    padding: 5px;
+}
+
+.educacion-descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+}
+
+.educacion-descripcion span{
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.educacion-descripcion p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.img-virgen {
+    margin-top: 5px;
+    width: 200px;
+}
+
+.img-virgen img{
+    border-radius: 15px;
+}
+
+.img-uba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    grid-row: 7 / 8;
+    grid-column: 1 / 2;
+    
+}
+
+.img-uba img {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.uba-descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    grid-row: 7 / 8;
+    grid-column: 2 / 3;
+}
+
+.uba-descripcion span{
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.uba-descripcion p{
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.img-inti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    grid-row: 8 / 9;
+    grid-column: 1 / 2;
+    border-bottom: 5px solid #000;
+}
+
+.img-inti img {
+    width: 200px;
+    border-radius: 15px;
+    height: 150px;
+}
+
+.inti-descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    grid-column: 2 / 3;
+    grid-row: 8 / 9;
+    border-bottom: 5px solid #000;
+}
+
+.inti-descripcion span{
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.inti-descripcion p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.contenedor-progres-titulo {
+    display: flex;
+    flex-direction: row;
+    grid-row: 9 / 10;
+    grid-column: 1 / 3;
+    color: #fff;
+    font-size: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedor-progres-html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / 2;
+    grid-row: 10 / 11;
+}
+
+
+.progres-svg-html {
+    width: 250px;
+    height: 250px;
+    
+}
+
+.progres-svg-html svg {
+    width: 250px;
+    height: 250px;
+    
+}
+
+
+.svg-circle-html {
+    fill:none;
+    stroke-width: 15;
+    stroke: rgb(253, 100, 0);
+    stroke-dasharray: 640;
+    stroke-dashoffset: 140;
+    transform: rotate(-90deg);
+    transform-origin:center ;
+    stroke-linecap: round;
+}
+
+.svg-circle-html-2 {
+    fill:none;
+    stroke-width: 15;
+}
+
+
+.progres-porcentage-html {
+    color: #fff;
+    font-size: 20px;
+}
+
+.progres-titulo-html {
+    color: #fff;  
+}
+
+.contenedor-progres-css-javascript {
+   display: flex;
+   grid-row: 10 / 11;
+   grid-column: 2 / 3;
+   flex-direction: row;
+   justify-content: space-around;
+   
+}
+
+
+.contenedor-progres-css {
+    display: flex;
+    flex-direction: column;
+    align-items: center ; 
+}
+
+.progres-svg-css {
+    width: 250px;
+    height: 250px;
+    
+}
+
+.progres-svg-css svg {
+    width: 250px;
+    height: 250px;
+    
+}
+
+
+.svg-circle-css {
+    fill:none;
+    stroke-width: 15;
+    stroke: rgb(0, 25, 253);
+    stroke-dasharray: 640;
+    stroke-dashoffset: 230;
+    transform: rotate(-90deg);
+    transform-origin:center ;
+    stroke-linecap: round;
+}
+
+.svg-circle-css-2 {
+    fill:none;
+    stroke-width: 15;
+}
+
+
+.progres-porcentage-css {
+    color: #fff;
+    font-size: 20px;
+}
+
+.progres-titulo-css {
+    color: #fff;  
+}
+
+.contenedor-progres-javascript {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.progres-svg-javascript {
+    width: 250px;
+    height: 250px;
+    
+}
+
+.progres-svg-javascript svg {
+    width: 250px;
+    height: 250px;
+    
+}
+
+.svg-circle-javascript {
+    fill:none;
+    stroke-width: 15;
+    stroke: rgb(240, 236, 0);
+    stroke-dasharray: 640;
+    stroke-dashoffset: 480;
+    transform: rotate(-90deg);
+    transform-origin:center ;
+    stroke-linecap: round;
+}
+
+.svg-circle-javascript-2 {
+    fill:none;
+    stroke-width: 15;
+}
+
+
+.progres-porcentage-javascript {
+    color: #fff;
+    font-size: 20px;
+}
+
+.progres-titulo-javascript {
+    color: #fff;  
+}
+
+.contenedor-progres-angular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / 2;
+    grid-row: 11 / 12;
+    border-bottom: 5px solid #000;
+}
+
+
+.progres-svg-angular {
+    width: 250px;
+    height: 250px;
+    
+}
+
+.progres-svg-angular svg {
+    width: 250px;
+    height: 250px;
+    
+}
+
+
+.svg-circle-angular {
+    fill:none;
+    stroke-width: 15;
+    stroke: #f00;
+    stroke-dasharray: 640;
+    stroke-dashoffset: 324;
+    transform: rotate(-90deg);
+    transform-origin:center ;
+    stroke-linecap: round;
+}
+
+.svg-circle-angular-2 {
+    fill:none;
+    stroke-width: 15;
+}
+
+
+.progres-porcentage-angular {
+    color: #fff;
+    font-size: 20px;
+}
+
+.progres-titulo-angular {
+    color: #fff;  
+}
+
+.contenedor-progres-spring-boot-my-sql {
+    display: flex;
+    grid-row: 11 / 12;
+    grid-column: 2 / 3;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 5px solid #000;
+ }
+ 
+ 
+ .contenedor-progres-spring-boot {
+     display: flex;
+     flex-direction: column;
+     align-items: center ; 
+ }
+ 
+ .progres-svg-spring-boot {
+     width: 250px;
+     height: 250px;
+     
+ }
+ 
+ .progres-svg-spring-boot svg {
+     width: 250px;
+     height: 250px;
+     
+ }
+ 
+ 
+ .svg-circle-spring-boot {
+     fill:none;
+     stroke-width: 15;
+     stroke: rgb(2, 252, 85);
+     stroke-dasharray: 640;
+     stroke-dashoffset: 480;
+     transform: rotate(-90deg);
+     transform-origin:center ;
+     stroke-linecap: round;
+ }
+ 
+ .svg-circle-spring-boot-2 {
+     fill:none;
+     stroke-width: 15;
+ }
+ 
+ 
+ .progres-porcentage-spring-boot {
+     color: #fff;
+     font-size: 20px;
+ }
+ 
+ .progres-titulo-spring-boot {
+     color: #fff;  
+ }
+ 
+ .contenedor-progres-my-sql {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .progres-svg-my-sql {
+     width: 250px;
+     height: 250px;
+     
+ }
+ 
+ .progres-svg-my-sql svg {
+     width: 250px;
+     height: 250px;
+     
+ }
+ 
+ .svg-circle-my-sql {
+     fill:none;
+     stroke-width: 15;
+     stroke: rgb(250, 173, 6);
+     stroke-dasharray: 640;
+     stroke-dashoffset: 480;
+     transform: rotate(-90deg);
+     transform-origin:center ;
+     stroke-linecap: round;
+ }
+ 
+ .svg-circle-my-sql-2 {
+     fill:none;
+     stroke-width: 15;
+ }
+ 
+ 
+ .progres-porcentage-my-sql {
+     color: #fff;
+     font-size: 20px;
+ }
+ 
+ .progres-titulo-my-sql {
+     color: #fff;  
+ }
+
+ .contenedor-proyectos-titulo {
+    display: flex;
+    grid-row: 12 / 13;
+    grid-column: 1 / 3;
+    flex-direction: row;
+    color: #fff;
+    font-size: 20px;
+    justify-content: center;
+    padding: 20px;
+  
+}
+
+.proyecto-portfolio-titulo {
+    display: flex;
+    grid-row: 13 / 14;
+    grid-column: 1 / 2;
+    color: #fff;
+    justify-content: flex-start;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.proyecto-portfolio-titulo h3{
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+}
+
+.portfolio-descripcion {
+    display: flex;
+    grid-row: 14 / 15;
+    grid-column: 1 / 3;
+    color:#fff;
+    
+}
+
+/* Footer */
+
+.grid-footer {
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: #000;
+    grid-row: 3/4;
+}
+
+.contacto-titulo {
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    grid-row: 1 / 2;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.contacto-descripcion {
+    display: flex;
+    justify-content: space-around;
+    grid-row: 2 / 3;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
